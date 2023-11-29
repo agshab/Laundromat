@@ -10,6 +10,8 @@ namespace Laundromat
         public string? CustomerSex { get; set; }
         public int CustomerAge { get; set; } = 0;
         [Key] public int CustomerId { get; set; }
+        //public ICollection<EquipmentUsage>? EquipmentUsage { get; set; }
+
     }
 }
 

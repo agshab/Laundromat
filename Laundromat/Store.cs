@@ -17,7 +17,9 @@ namespace Laundromat
 
         public ICollection<Equipment>? EquipmentInStore { get; set; }
         public ICollection<Customer>? CustomersinStore { get; set; }
-        public ICollection<EquipmentUsage>? EquipmentInUuseInStore { get; set; }
+        //public ICollection<EquipmentUsage>? EquipmentInUuseInStore { get; set; }
+
+
     }
 }
 
