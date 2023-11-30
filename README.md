@@ -20,7 +20,7 @@ Instructions
             For Example: git clone git@github.com:agshab/Laundromat.git
             
       5. Go to the Repository on computer and open the file Laundromat.sln in Visual Studio (or your preferred IDE)
-      
+
       6. Switch to Branch4 on the local 
 
       7. NET SDK: Ensure that you have the .NET SDK installed to build. 
