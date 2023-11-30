@@ -23,7 +23,9 @@ Instructions
       
       6. Switch to Branch4 on the local 
 
-      7. Run dotnet ef database update from within the Laundromat project to create the database structure
+      7. NET SDK: Ensure that you have the .NET SDK installed to build. 
+            Back on the TERMINAL or use cmd or git bash to run "dotnet ef migrations add Initial" command, once thats is sucessful
+            Then run "dotnet ef database update" command in the subfolder dir. This will create the "Laundromat.db" on your desktop.                Run dotnet ef database update from within the Laundromat project to create the database structure
       
       8. Seed the database onto your machine (Make sure to uncomment out //seedthedatabase before you store it onto your machine)  
 
