@@ -9,10 +9,10 @@ namespace Laundromat
         [Key] public string? SerialNumber { get; set; }
         public decimal CustomerPrice { get; set; }
 
-        public static implicit operator int(Equipment v)
-        {
-            throw new NotImplementedException();
-        }
+        //public static implicit operator int(Equipment v)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
 

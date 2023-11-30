@@ -1,13 +1,15 @@
 ﻿using System;
-
+using Microsoft.EntityFrameworkCore;
 
 namespace Laundromat
 {
     internal class Program
     {
-        public static void SeedTheDataBase()
-        {
 
+        // Asnyc method will allow the data to work in the background while you focus on the main code.... 
+
+        public static async Task SeedTheDataBase()
+        {
 
             // Created Equipment set values for the Database
 
@@ -462,8 +464,6 @@ namespace Laundromat
 
             };
 
-
-
             // Created EquipmentUsage set values for the database
 
             EquipmentUsage EquipmentUsage1 = new EquipmentUsage
@@ -671,8 +671,6 @@ namespace Laundromat
             };
 
 
-
-
             // Add Store set values to the database
             List<Store> ListofStores = new List<Store>
             {
@@ -715,15 +713,15 @@ namespace Laundromat
             context.AddRange(EquipmentList);
             context.AddRange(CustomersList);
             context.AddRange(EquipmentUsagesList);
-            context.SaveChanges();
+            await context.SaveChangesAsync();
 
         }
 
-        public static void Main()
+        public static async Task Main()
 
         {
 
-            SeedTheDataBase();
+            //SeedTheDataBase();
 
             // MAKE SURE TO: uncomment out seedthedatabase before you store it onto your machine
 
@@ -745,22 +743,19 @@ namespace Laundromat
             // the type of equipment in usage and this is based on what is being requested in code
 
 
-
-
-
             Console.WriteLine("Press Enter to START");
 
             string userInput = Console.ReadLine();
 
             using LaundromatContext context = new LaundromatContext();
 
-            List<Store> stores = context.Stores.ToList();
+            List<Store> stores = await context.Stores.ToListAsync();
 
-            List<Customer> customers = context.Customers.ToList();
+            List<Customer> customers = await context.Customers.ToListAsync();
 
-            List<Equipment> equipment = context.Equipment.ToList();
+            List<Equipment> equipment = await context.Equipment.ToListAsync();
 
-            List<EquipmentUsage> equipmentUsages = context.EquipmentUsages.ToList();
+            List<EquipmentUsage> equipmentUsages = await context.EquipmentUsages.ToListAsync();
 
 
             Console.WriteLine("+-----------------------+");
@@ -797,7 +792,7 @@ namespace Laundromat
                 }
 
 
-                static void ExecuteServiceSelection1(List<Customer> customers)
+                static async void ExecuteServiceSelection1(List<Customer> customers)
                 {
 
                     foreach (Customer individualcustomer in customers)
@@ -817,9 +812,9 @@ namespace Laundromat
                         .Single();
 
 
-                    List<EquipmentUsage> ListofEquipmentUsage = context.EquipmentUsages
+                    List<EquipmentUsage> ListofEquipmentUsage = await context.EquipmentUsages
                         .Where(equipmentUsagesparamater => equipmentUsagesparamater.Customer == customerX)
-                        .ToList();
+                        .ToListAsync();
 
                     //List<Store> ListofStoreNameType = context.Stores
                     //       .Where(storesparameter => storesparameter.CustomersinStore == customerX)
@@ -841,8 +836,11 @@ namespace Laundromat
                        .ToList();
 
 
+
                     Console.WriteLine($" {customerX.CustomerFirstName} {customerX.CustomerLastName} " +
                                        $" has " + ListofEquipmentUsage.Count + " equipments in use, " +
+                                       //$" at the {StoreX.StoreName} store" +
+                                       //$" at the {string.Join(',', ListofStoreName)} store " +
                                        $" {string.Join(',', ListofEquipmentUsagesType)} ");
 
 
