@@ -38,13 +38,13 @@ Instructions
           
          Use it to retrieve data from the database in the program  
       
-     Make your application asynchronous ✅
+     Make application asynchronous ✅
      
          SeedTheDataBase made it Async 
          
          All the ToList, made it async  
 
-     Add comments to your code ✅           
+     Add comments to code ✅           
      
          Providing with details by explaining on how you are using at least 2 of the solid principles
           
@@ -117,5 +117,3 @@ Technologies/Languages/Libraries
        
        SQLLite
        
-
-
