@@ -22,8 +22,10 @@ Instructions
       5. Go to the Repository on computer and open the file Laundromat.sln in Visual Studio (or your preferred IDE)
       
       6. Switch to Branch4 on the local 
+
+      7. Run dotnet ef database update from within the Laundromat project to create the database structure
       
-      7. Seed the database onto your machine (Make sure to uncomment out //seedthedatabase before you store it onto your machine)  
+      8. Seed the database onto your machine (Make sure to uncomment out //seedthedatabase before you store it onto your machine)  
 
       
       
@@ -45,12 +47,12 @@ Instructions
          All the ToList, made it async  
 
      Add comments to code ✅           
-     
-         Providing with details by explaining on how you are using at least 2 of the solid principles
           
          While Loop Method (In Program)
             
          List Method (In Program) 
+
+         Async Method (In Program) 
          
          
 
