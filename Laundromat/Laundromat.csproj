@@ -17,8 +17,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Entities\" />
+    <None Remove="Laundromant.Test\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
+    <Folder Include="Laundromant.Test\" />
   </ItemGroup>
 </Project>
