@@ -49,14 +49,9 @@ Instructions
          
          All the ToList, made it async  
 
-     Add comments to code ✅           
+     Query your database using a raw SQL query ✅           
           
-         While Loop Method (In Program)
-            
-         List Method (In Program) 
-
-         Async Method (In Program) 
-         
+         Changed Customer Last Name from: "Neil" to "James" using raw SQL query
          
 
 Requirements & Features 
@@ -107,7 +102,7 @@ Requirements & Features
           
           Make your application asynchronous...
           
-          Add comments to your code explaining how you are using at least 2 of the solid principles
+          Query your database using a raw SQL query 
           
           Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
           
