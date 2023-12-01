@@ -29,8 +29,6 @@ Instructions
             Run dotnet ef database update from within the Laundromat project to create the database structure
       
       8. Seed the database onto your machine (Make sure to uncomment out //seedthedatabase before you store it onto your machine)  
-
-      
       
 
 
@@ -49,17 +47,7 @@ Instructions
          
          All the ToList, made it async  
 
-     Add comments to code ✅           
-          
-         While Loop Method (In Program)
-            
-         List Method (In Program) 
-
-         Async Method (In Program) 
-         
-         
-
-Requirements & Features  Query your database using a raw SQL query ✅           
+    Query your database using a raw SQL query ✅           
           
          Changed Customer Last Name from: "Neil" to "James" using raw SQL query
          
@@ -126,4 +114,5 @@ Technologies/Languages/Libraries
        Entity Framework
        
        SQLLite
+       
        
