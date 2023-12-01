@@ -750,6 +750,7 @@ namespace Laundromat
 
             using LaundromatContext context = new LaundromatContext();
             context.Database.ExecuteSql($"UPDATE Customers SET CustomerFirstName='James' WHERE CustomerFirstName='Neil'");
+            context.Database.ExecuteSql($"UPDATE Customers SET CustomerFirstName='Ghaazal' WHERE CustomerFirstName='Arshia'");
             //context.Database.ExecuteSql($"UPDATE EquipmentUsages SET EquipmentUsageId='2111' WHERE EquipmentUsageId='2345'");
 
             List<Store> stores = await context.Stores.ToListAsync();
