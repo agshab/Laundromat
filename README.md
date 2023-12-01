@@ -59,6 +59,11 @@ Instructions
          
          
 
+Requirements & Features  Query your database using a raw SQL query ✅           
+          
+         Changed Customer Last Name from: "Neil" to "James" using raw SQL query
+         
+
 Requirements & Features 
 
       GitHub Repository and Commits: ✅
@@ -107,7 +112,7 @@ Requirements & Features
           
           Make your application asynchronous...
           
-          Add comments to your code explaining how you are using at least 2 of the solid principles
+          Query your database using a raw SQL query 
           
           Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
           
